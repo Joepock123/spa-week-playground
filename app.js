@@ -1,1 +1,1 @@
-const frog = 'empty asdad'                          
+const frog = 'empty asdad';

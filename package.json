@@ -15,7 +15,8 @@
   },
   "scripts": {
     "dev": "servor --reload",
-    "lint": "eslint --fix ."
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",

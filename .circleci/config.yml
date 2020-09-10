@@ -5,9 +5,24 @@ orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
+
+jobs: 
+  run_eslint:
+    docker: 
+      - circleci/node:10
+    steps: 
+      - checkout
+      run: 
+        name: Install npm dependencies
+        command: | 
+          npm install --save
+      run: 
+        name: Run eslint
+        command: |
+          ./node_modules/eslint/bin/eslint *.js
 workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
+  # Name the workflow
+  build_eslint:
+    # Run the job in its own container
     jobs:
-      - welcome/run
+      - run_eslint

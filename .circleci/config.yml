@@ -18,7 +18,7 @@ jobs:
       - run: 
         name: Run eslint
         command: |
-          ./node_modules/eslint/bin/eslint *.js
+          eslint
 workflows:
   # Name the workflow
   build_eslint:

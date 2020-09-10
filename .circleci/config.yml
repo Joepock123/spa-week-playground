@@ -11,11 +11,11 @@ jobs:
       - circleci/node:10
     steps:
       - checkout
-      run: 
+      - run: 
         name: Install npm dependencies
         command: | 
           npm install --save
-      run: 
+      - run: 
         name: Run eslint
         command: |
           ./node_modules/eslint/bin/eslint *.js

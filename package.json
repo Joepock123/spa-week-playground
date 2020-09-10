@@ -1,0 +1,39 @@
+{
+  "name": "spa-week-playground",
+  "version": "1.0.0",
+  "description": "Revisiting the FAC Week 8 Single Page Applications project",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "scripts": {
+    "dev": "servor --reload",
+    "lint": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joepock123/spa-week-playground.git"
+  },
+  "author": "joepock123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joepock123/spa-week-playground/issues"
+  },
+  "homepage": "https://github.com/Joepock123/spa-week-playground#readme",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "servor": "^4.0.2"
+  }
+}
